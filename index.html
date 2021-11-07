@@ -11,19 +11,43 @@
     <div class="header">
         <div class="header-box">
             <div class="header-profile">
-                
-            </div>
+              <a href="#"  onclick="hamburgerMenu()">
+                <div class="hMenu-box" onclick="hamburgerMenu_change(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </a>
+               
+              </div >
+            
             <div class="header-logo">
-                <div class="img-circle">
-                    <img src="img/vbuck.png" style="width: 20%;">
-                </div>
-                
+                <img src="img/Avatar.jpg" class="img-circle"></img>
             </div>
-            <div class="header-link">
-                
-            </div>
+            <div class="header-link" >
+                <a href="#">Login</a>
+                <a href="#">Account</a>
+                <a href="#">Profile</a>
+            </div >
         </div>
 
-    </div> 
+    </div>
+    <i class="hamburger-box" id="myLinks"> </i> 
 </body>
 </html>
+
+<script>
+function hamburgerMenu_change(x) {
+  x.classList.toggle("change");
+}
+function hamburgerMenu() {
+  var x = document.getElementById("myLinks");
+  if (x.style.opacity === "1") {
+    x.style.opacity = "0";
+    x.style.margin = "120px";
+  } else {
+    x.style.opacity = "1";
+    x.style.margin = "40px";
+  }
+}
+</script>
