@@ -60,6 +60,7 @@ body{
 
 }
 .header-logo {
+    text-decoration: none;
 }
 .img-circle{
     width: 50px;
