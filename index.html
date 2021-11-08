@@ -25,14 +25,52 @@
                 <img src="img/Avatar.jpg" class="img-circle"></img>
             </div>
             <div class="header-link" >
-                <a href="#">Login</a>
-                <a href="#">Account</a>
-                <a href="#">Profile</a>
+                <a href="javascript:alert('Presto disponibile');">Login</a>
+                <a href="javascript:alert('Presto disponibile');">Account</a>
+                <a href="javascript:alert('Presto disponibile');">Profile</a>
             </div >
         </div>
 
     </div>
-    <i class="hamburger-box" id="myLinks"> </i> 
+    <div class="hamburger-box" id="myLinks"> 
+      <div class="hamburger-sub-box">
+
+      </div>
+      <div class="hamburger-sub-box">
+        
+      </div>
+      <div class="hamburger-sub-box">
+        
+      </div>
+      <div class="hamburger-sub-box">
+        
+      </div>
+
+    </div> 
+
+
+
+
+    <div class="body-cover">
+        <div class="body-box">
+
+        </div>
+        <div class="body-box" style="width: 60%;">
+            <div class="central-body-box" id="centrale">  
+                <a href="#"  onclick="box_centrale()">
+                    <div class="bar1-centro"></div>
+                    <div class="bar2-centro"></div>
+
+
+                </a>
+            </div>
+        </div>
+        <div class="body-box">
+            
+        </div>
+    </div>
+
+
 </body>
 </html>
 
@@ -42,12 +80,19 @@ function hamburgerMenu_change(x) {
 }
 function hamburgerMenu() {
   var x = document.getElementById("myLinks");
-  if (x.style.opacity === "1") {
-    x.style.opacity = "0";
-    x.style.margin = "120px";
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    x.style.opacity = "1";
-    x.style.margin = "40px";
+    x.style.display = "block";
   }
 }
+function box_centrale() {
+  var x = document.getElementById("centrale");
+  if (x.style.height === "400px") {
+    x.style.height = "100px";
+  } else {
+    x.style.height = "400px";
+  }
+}
+
 </script>
