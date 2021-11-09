@@ -56,15 +56,25 @@
 
         </div>
         <div class="body-box" style="width: 60%;">
-            <div class="central-body-box" id="centrale">  
-                <a href="#"  onclick="box_centrale()">
-                    <div class="bar1-centro"></div>
-                    <div class="bar2-centro"></div>
+          <div class="central-body-box" >  
+            <a href="#"  onclick="box_centrale()">
+              <div class="box-bar">
+                <div class="bar1-centro" id="tendina-bar1"></div>
+                <div class="bar2-centro"  id="tendina-bar2"></div>
+              </div>
+            </a>
 
-
-                </a>
+            <br><br><br>
+            <div class="sotto-tenda" id="centrale">
+              <h1>Titolo</h1>
+              <h3>descrizione</h3>
             </div>
+          </div>
+            
+
+
         </div>
+
         <div class="body-box">
             
         </div>
@@ -88,11 +98,20 @@ function hamburgerMenu() {
 }
 function box_centrale() {
   var x = document.getElementById("centrale");
-  if (x.style.height === "400px") {
-    x.style.height = "100px";
+  var bar1 = document.getElementById("tendina-bar1");
+  var bar2 = document.getElementById("tendina-bar2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    bar1.style.transform = "rotate(45deg) translate(8.5px, -8.5px)";
+    bar2.style.transform = "rotate(135deg) translate(8px, 8px)";
   } else {
-    x.style.height = "400px";
+    x.style.display = "block";
+    bar1.style.transform = "rotate(45deg) translate(2.5px, -2.5px)";
+    bar2.style.transform = "rotate(135deg) translate(2px, 2px)";
+
   }
 }
+
+
 
 </script>
