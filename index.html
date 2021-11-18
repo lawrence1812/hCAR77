@@ -12,13 +12,13 @@
     <div class="header">
         <div class="header-box">
             <div class="header-profile">
-              <a href="#"  onclick="hamburgerMenu()">
-                <div class="hMenu-box" onclick="hamburgerMenu_change(this)">
+
+                <div class="hMenu-box" onclick="hamburgerButton()" id="h">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                   </div>
-                </a>
+
                
               </div >
             
@@ -26,7 +26,7 @@
                 <img src="img/Avatar.jpg" class="img-circle"></img>
             </div>
             <div class="header-link" >
-                <a href="javascript:alert('Presto disponibile');">Login</a>
+                <a href="#" onclick="loginButton()">Login</a>
                 <a href="javascript:alert('Presto disponibile');">Account</a>
                 <a href="javascript:alert('Presto disponibile');">Profile</a>
             </div >
@@ -34,21 +34,17 @@
 
     </div>
     
-    <div class="hamburger-box" id="hamburger-backgorund"> 
-   <a href="#"  onclick="hamburgerBackgorund()" style="border: solid red;">
+    <div class="hamburger-box" id="hamburger-backgorund" onblur="hamburgerBackForCloose()"> 
       <div class="hamburger-sub-box">
-
+       
       </div>
       <div class="hamburger-sub-box">
-        
       </div>
       <div class="hamburger-sub-box">
-        
       </div>
       <div class="hamburger-sub-box">
-        
       </div>
- </a>
+    
     </div> 
      
 
@@ -58,7 +54,7 @@
         <div class="body-box">
 
         </div>
-        <div class="body-box" style="width: 60%;">
+        <div class="body-box body-box-big">
           <div class="central-body-box" >  
             <a href="#"  onclick="box_centrale()">
               <div class="box-bar">
@@ -82,6 +78,29 @@
             
         </div>
     </div>
+    <div class="login" id="login">
+      <div class="login-cover" >
+        <form class="modal-content animate" action="dati.html" method="post">
+
+          <div class="box-bar" onclick="loginForClose()">
+            <div class="bar1-w"></div>
+            <div class="bar2-w" ></div>
+          </div>
+          <br>
+            <label  class="formUsn" for="uname"><b>Username</b></label><br>
+            <input type="text" placeholder="Username" name="uname"  required>
+            <br>
+            <label class="formPsw"  for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Password" name="psw" required><br>
+            <br>
+            <button type="submit" >Login</button><br>
+      
+          </div>
+      
+        </form>
+      </div>
+    </div>
+    
 
 
 </body>

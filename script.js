@@ -1,6 +1,3 @@
-function hamburgerMenu_change(x) {
-    x.classList.toggle("change");
-  }
   function hamburgerMenu() {
     var x = document.getElementById("hamburger-backgorund");
     if (x.style.display === "block") {
@@ -13,6 +10,7 @@ function hamburgerMenu_change(x) {
     var x = document.getElementById("centrale");
     var bar1 = document.getElementById("tendina-bar1");
     var bar2 = document.getElementById("tendina-bar2");
+    
     if (x.style.display === "block") {
       x.style.display = "none";
       x.style.height = "0px"
@@ -26,16 +24,38 @@ function hamburgerMenu_change(x) {
   
     }
   }
-  function hamburgerBackgorund() {
-    
+  function hamburgerButton() {
     var x = document.getElementById("hamburger-backgorund");
+    var h = document.getElementById("h");
+    h.classList.toggle("menuChange");
     if (x.style.display === "block") {
         x.style.display = "none";
       } else {
         x.style.display = "block";
-      }
-    
+      } 
   }
+  function hamburgerBackForCloose() {
+    var x = document.getElementById("hamburger-backgorund");
+    var h = document.getElementById("h");
+    h.classList.toggle("menuChange");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  function loginForClose() {
+    var x = document.getElementById("login");
+    x.style.display = "none";
+
+}
+function loginButton() {
+  var x = document.getElementById("login");
+    x.style.display = "flex";
+}
+
+  
   
   
   
