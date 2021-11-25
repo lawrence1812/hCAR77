@@ -27,7 +27,7 @@
             </div>
             <div class="header-link" >
                 <a href="#" onclick="loginButton()">Login</a>
-                <a href="javascript:alert('Presto disponibile');">Account</a>
+                <a href="#">Arduino</a>
                 <a href="javascript:alert('Presto disponibile');">Profile</a>
             </div >
         </div>
@@ -54,25 +54,31 @@
         <div class="body-box">
 
         </div>
-        <div class="body-box body-box-big">
-          <div class="central-body-box" >  
+        <div class="body-box body-box-big">  
+
+
+
+          <div class="contenitore-centrale">
+           <div class="central-body-box" >  
+            <h1>Aruduino</h1>
             <a href="#"  onclick="box_centrale()">
               <div class="box-bar">
                 <div class="bar1-centro" id="tendina-bar1"></div>
                 <div class="bar2-centro"  id="tendina-bar2"></div>
               </div>
             </a>
-
-            <br><br><br>
+            </div>
             <div class="sotto-tenda" id="centrale">
-              <h1>Titolo</h1>
-              <h3>descrizione</h3>
+             
+                Lista progetti in corso: <br>
+                ESP8266-01 AP mode intefaccia html con collegamneto ad arduino <br>
+                <button onclick="arduinoButton()">Click</button>
+              
             </div>
           </div>
-            
-
-
+          
         </div>
+
 
         <div class="body-box">
             
@@ -80,7 +86,7 @@
     </div>
     <div class="login" id="login">
       <div class="login-cover" >
-        <form class="modal-content animate" action="dati.html" method="post">
+        <form class="modal-content animate" action="dati.html"  method="post">
 
           <div class="box-bar" onclick="loginForClose()">
             <div class="bar1-w"></div>
@@ -98,6 +104,15 @@
           </div>
       
         </form>
+      </div>
+
+      <div class="arduino" id="arduino">
+        <div class="arduino-cover" >
+          <div class="box-bar" onclick="arduinoForClose()">
+            <div class="bar1-w"></div>
+            <div class="bar2-w" ></div>
+          </div>
+      </div>  
       </div>
     </div>
     
