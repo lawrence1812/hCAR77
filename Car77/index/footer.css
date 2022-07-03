@@ -9,5 +9,33 @@
     justify-content:space-around;
 
     padding: 50px;
-    border: solid red;
-  }
+
+
+
+    background: white;
+}
+
+.footer .fContainer {
+   
+  width: 100%;
+  min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  border: solid red;
+
+
+ 
+}
+.footer .fContainer h1{
+  font-weight: 1000;
+  font-size: 32px;
+  letter-spacing: 1px;
+  
+}
+
