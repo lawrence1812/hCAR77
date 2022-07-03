@@ -22,12 +22,10 @@
     justify-content:space-around;
 
     padding: 50px;
-    
-
-    
-    
 
 }
+
+
 .card, .front-face, .back-face {
     border-radius: 20px;
     transition: transform .3s ease-in-out;
@@ -119,15 +117,19 @@
 .card:hover > .front-face {
     transform: rotateY(-180deg);
 }
-  @keyframes moveToRight {
-    0% {
-       transform: translateX(0px);
-     }
-    50% {
-       transform: translateX(150px);
-     }
-      100% {
-       transform: translateX(300px);
 
-      }
+
+@media screen and (max-width: 800px) {
+
+    .cardContainer {     
+        flex-direction: column;
+
     }
+
+    .card {
+        margin-top: 20px ;
+        margin-bottom: 20px;
+        
+    }
+
+}
