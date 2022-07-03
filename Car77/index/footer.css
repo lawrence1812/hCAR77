@@ -3,39 +3,89 @@
     height: 400px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content:space-around;
 
-    padding: 50px;
+
+    background: #212529;
+}
 
 
+.footer .footerCard {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
 
-    background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:space-around;
+  
 }
 
 .footer .fContainer {
    
-  width: 100%;
+  width: auto;
   min-height: 100px;
 
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   padding: 10px;
-  border: solid red;
+
 
 
  
 }
-.footer .fContainer h1{
-  font-weight: 1000;
-  font-size: 32px;
-  letter-spacing: 1px;
+
+.footer .contactRow {
+  
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.footer .contactRow img{
+  max-width: 20px;
+  margin-right: 20px;
   
 }
 
+.footer .footerCard .fContainer h1, a, p {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight: 900;
+  font-size:30px;
+  color: white;
+
+}
+
+.footer .fContainer a, p {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.footer .fContainer a:hover {
+  text-decoration: underline;
+}
+
+
+.footer .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.7;
+  font-size:13px;
+  margin-bottom:0;
+  color: white;
+}

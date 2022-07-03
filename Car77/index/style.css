@@ -5,7 +5,7 @@
     --main-color-3: #ae8328;
     --main-color-1Op: #ae842844;
     
-    --background: #1f2021;
+    --background: #454446;
 }
 *{
     padding: 0;
@@ -18,7 +18,7 @@
 html {
     font: 10px;
     font-family: 'Montserrat', sans-serif;
-    background: #1f2021;
+    background: linear-gradient(41deg, rgba(69,68,70,0.8687850140056023) 34%, rgba(69,68,70,0.7679446778711485) 64%, rgba(69,68,70,0.8267682072829132) 85%, rgba(69,68,70,0.8491771708683473) 97%);
 }
 
 a {
@@ -120,13 +120,12 @@ a {
     min-height: 5vh;
     width: auto;
 
-    border: #5028ae solid;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    
   
 }
 
@@ -149,7 +148,7 @@ a {
 /* hero */
 
 #hero {
-    background-image: url("img/auto.jpg");
+    background-image: url("img/Ponti-1.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -191,10 +190,6 @@ a {
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 
-
-
-
-
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -217,6 +212,7 @@ a {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 
 .wrapper .tooltip {
   position: absolute;
@@ -277,13 +273,6 @@ a {
   color: #ffffff;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: var(--main-color-3);
-  color: #ffffff;
-}
-
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
@@ -292,5 +281,16 @@ a {
 }
 
 
+
+.js-scroll {
+  width: 50%;
+  height: 300px;
+  background-color: #DADADA;
+  transition: background-color 500ms;
+}
+ 
+.js-scroll.scrolled {
+  background-color: aquamarine;
+}
 
 
