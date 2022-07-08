@@ -69,14 +69,15 @@ a {
   }
 
   #navbar nav {
- 
     padding: 10px;
     text-align: center;
     width: 100%;
     position: fixed;
     top: 0px;
   }
-
+  #navbar .navMenu  {
+    display: flex;
+  }
   #navbar .button {
     border: solid transparent 1px;
     border-radius: 20px;
@@ -170,10 +171,13 @@ a {
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 5em;
     position: relative;
     color: var(--main-color-1);
-    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    letter-spacing: normal;
+   
  
 }
 
@@ -284,20 +288,25 @@ a {
 
 
 
-.js-scroll {
-  width: 50%;
-  height: 300px;
-  background-color: #DADADA;
-  transition: background-color 500ms;
-}
- 
-.js-scroll.scrolled {
-  background-color: aquamarine;
-}
 
 
 
-@media screen and (min-width: 800px) {
-
+@media screen and (max-width: 800px) {
+   
+  #navbar .navMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    display: none;
+  }
+  
+  #navbar nav {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+  }
 
 }
